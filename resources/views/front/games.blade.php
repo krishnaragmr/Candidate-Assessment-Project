@@ -21,7 +21,13 @@
                             <td colspan="2">No games.</td>
                         </tr>
                     @endforelse
-                </table>
+		</table>
+
+
+		<form method="post" action="/games" >
+		  {{ csrf_field() }}
+			<button type="submit" class="btn btn-primary">Start Game</button>
+		</form>
 
                 <hr />
 		@if(!$results->isEmpty())

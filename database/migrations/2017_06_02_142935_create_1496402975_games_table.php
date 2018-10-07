@@ -22,7 +22,7 @@ class Create1496402975GamesTable extends Migration
                 $table->datetime('start_time')->nullable();
                 $table->integer('result1')->nullable();
                 $table->integer('result2')->nullable();
-                
+                $table->string('match_status')->nullable();
                 $table->timestamps();
                 $table->softDeletes();
 

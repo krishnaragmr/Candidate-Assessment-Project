@@ -1,6 +1,7 @@
 <?php
 Route::get('/', function () { return redirect('/games'); });
 Route::get('/games', 'GamesController@index');
+Route::post('/games', 'GamesController@start');
 Route::get('/teams', 'TeamsController@index');
 Route::get('/players/{team_id}', 'TeamsController@players');
 Route::get('/table', 'TableController@index');
