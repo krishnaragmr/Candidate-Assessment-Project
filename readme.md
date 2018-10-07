@@ -24,7 +24,8 @@ mysql  5.5+
 - Run __php artisan migrate --seed__ (it has some seeded data for your testing)
 
 
-That's it: launch the main URL   /
+-That's it:
+    Go to Main URL / 
 
 OR
 
