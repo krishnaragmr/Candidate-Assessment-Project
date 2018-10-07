@@ -4,6 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
+	        	@if(!$games->isEmpty())
+
                 <h1>Upcoming Games</h1>
 
                 <table class="table">
@@ -21,7 +23,7 @@
                             <td colspan="2">No games.</td>
                         </tr>
                     @endforelse
-		</table>
+        		</table>
 
 
 		<form method="post" action="/games" >
@@ -30,6 +32,7 @@
 		</form>
 
                 <hr />
+		        @endif
 		@if(!$results->isEmpty())
 			<h1>Results</h1>
 			<table class="table">
@@ -56,3 +59,14 @@
         </div>
     </div>
 @endsection
+
+
+
+
+<script type="text/javascript">
+   setTimeout(function(){
+       location.reload();
+   },5000);
+</script>
+
+
