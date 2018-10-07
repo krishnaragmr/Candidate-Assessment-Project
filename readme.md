@@ -5,12 +5,12 @@ real-time scores and statistics of NBA
 
 #requirements:
 
-PHP >= 5.6.4
-OpenSSL PHP Extension
-PDO PHP Extension
-Mbstring PHP Extension
-Tokenizer PHP Extension
-XML PHP Extension
+- PHP >= 5.6.4
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
 
 mysql  5.5+
 
@@ -28,7 +28,7 @@ That's it: launch the main URL   /
 
 OR
 
- go to /login and login with default credentials
- admin@admin.com 
- password
+-  go to /login and login with default credentials
+- user_name:admin@admin.com 
+- password:password
 
