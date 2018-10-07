@@ -33,3 +33,7 @@ OR
 - user_name:admin@admin.com 
 - password:password
 
+
+-used to listen for and process jobs as they are added to the job queue
+php artisan queue:listen --timeout=0
+
