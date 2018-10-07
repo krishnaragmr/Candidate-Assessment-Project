@@ -33,14 +33,14 @@ class SendReminderEmail implements ShouldQueue
     public function handle()
     {
         $id = $this->game->id;
-        for($i=0;$i<10;$i++)   
+        for($i=0;$i<48;$i++)   
         {		
-           # sleep(1);
+            sleep(5);
             $game = Game::find($id);
             if($game)
             {
-                $game->result1=$game->result1 + 100;
-                $game->result2=$game->result2 + 80;
+                $game->result1=$game->result1 + 5;
+                $game->result2=$game->result2 + 10;
                 $game->match_status='running';
                 $game->save();
             }
