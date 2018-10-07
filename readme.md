@@ -34,6 +34,7 @@ OR
 - password:password
 
 
--used to listen for and process jobs as they are added to the job queue
+-   used to listen for and process jobs as they are added to the job queue
+
 php artisan queue:listen --timeout=0
 
